@@ -1,0 +1,165 @@
+@font-face{
+    src: url(fonts/DINPro\ Black.otf);
+    font-family: DinproBlack;
+}
+@font-face{
+    src: url(fonts/FontsFree-Net-DINPro-1.ttf);
+    font-family: Dinpro;
+}
+
+html body{
+    margin: 0;
+    background-color: rgb(39, 49, 88);
+    box-sizing: content-box;
+}
+
+
+
+.popup_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #003456;
+}
+.bar:nth-child(2){
+    opacity: 0;
+}
+.bar:nth-child(1){
+    transform: translateY(6px) rotate(45deg);
+}
+.bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+.pop_up_cross:hover{
+    cursor: grab;
+    transform: scale(1.1);
+}
+
+.pop_up_cross{
+    transition: 0.3s;
+}
+
+
+
+.pop_up{
+    background-color: #f6cadd;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    border-radius: 12.5px;
+   
+}
+
+
+
+
+
+.pop_up_content{
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.pop_up_header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: solid rgb(212, 190, 209);
+    
+}
+
+.pop_up_header h1{
+    font-family: "DinproBlack", sans-serif;
+    color: #003456;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.pop_up_smartphone{
+    width: 190px;
+    
+}
+
+.pop_up_smartphone img{
+    width: 190px;
+    height: auto;
+    margin-left: 10px;
+}
+
+
+
+
+
+.pop_up_texte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+
+
+
+.pop_up_texte h1{
+    font-family: "DinproBlack", sans-serif;
+    color: #003456;
+    margin: 0;
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+
+.pop_up_texte p{
+    color: #003456;
+    font-family: "Dinpro", sans-serif;
+    font-weight: 300;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin: 1px;
+}
+
+.pop_up_10{
+    width: 175px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.pop_up_qrcode{
+    width: 90px;
+}
+
+
+
+.pop_up_link{
+    display: flex;
+    margin-top: 30px;
+}
+
+.pop_up_link img{
+    width: 120px;
+    margin: 0 2.5px;
+}
